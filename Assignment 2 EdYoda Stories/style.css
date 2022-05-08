@@ -1,0 +1,207 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* header */
+header ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+header ul li {
+  display: inline-block;
+  vertical-align: middle;
+}
+header {
+  padding: 16px 78px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px #ccc;
+}
+header .stories {
+  margin: 0;
+  font-weight: 500;
+  font-family: Raleway;
+  font-style: Italic;
+}
+header h3.logo {
+  width: 130px;
+  font-size: 32px;
+  color: #0084ff;
+  margin: 0;
+  padding: 0;
+}
+
+/* dropdown */
+/* Dropdown Button */
+.dropbtn {
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+}
+
+.dropdown img {
+  margin-left: 8px;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  padding: 0.5em;
+  background-color: #fff;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+.dropbtn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+/* filters */
+section.filter {
+  padding: 0% 16%;
+}
+.categorycontainer {
+  margin-bottom: 20px;
+  font-size: 16px;
+  padding-top: 16px;
+}
+.categorycontainer .filtertext {
+  margin-bottom: 13px;
+}
+.categorycontainer .filtertext i {
+  width: 25px;
+  height: 25px;
+  display: inline;
+  vertical-align: middle;
+  color: #0084ff;
+}
+.categorycontainer .filtertext p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 8px;
+  display: inline;
+}
+.categorycontainer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.categorycontainer ul li {
+  display: inline-flex;
+}
+.categorycontainer ul li a {
+  font-size: 14px;
+  padding: 6px 14px;
+  width: auto;
+  color: #0084ff;
+  border-radius: 15px;
+  border: 1px solid #0084ff;
+  margin: 5px;
+  cursor: pointer;
+}
+.categorycontainer ul li a.active {
+  color: #fff;
+  background-color: #0084ff;
+}
+/* cards */
+section.card {
+  /* padding: 2% 16%; */ /* Padding mentioned as document is commented here, cuz margin bottom is already given to categorycontainer, it is taking too much space in between so I commented */
+  padding: 0% 16% 2%;
+}
+.item {
+  /* width: 31.33%; */
+  width: 33.33%;
+  max-width: 17.5em; /* this is optional css I am adding. If I remove this, only two box are displaying. I got reference from actual website of edyoda */
+  box-shadow: 0 5px 20px 0 rgb(0 0 0 / 10%);
+  border-radius: 5px;
+  margin: 0.5rem;
+  display: inline-block;
+}
+.item .imagesection {
+  width: 100%;
+  height: 176px;
+}
+.item .imagesection img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.item .textsection {
+  padding: 10px 24px;
+}
+.item .textsection .authorcontainer p.author {
+  color: #0096ff;
+  font-size: 14px;
+  font-style: Italic;
+  font-weight: 500;
+}
+
+.item .textsection .authorcontainer p.author span {
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  color: #000;
+}
+
+.item h2.title {
+  font-size: 18px;
+  text-align: left;
+  margin: 0px;
+  font-weight: 600;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.item .authorcontainer {
+  padding-top: 4px;
+}
+.item p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.43;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 4px 0;
+}
+footer {
+  background-color: #172146;
+  padding: 80px 16%;
+}
